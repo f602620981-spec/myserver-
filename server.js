@@ -8,8 +8,8 @@ const https = require('https');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
 app.use(express.json({ limit: '20mb' }));
+
 
 // লোকাল ফাইল বেসড ডাটাবেজ পাথ (যate কোনো এক্সট্রা ডাটাবেজের ঝামেলা না লাগে)
 const DATA_FILE = path.join(__dirname, 'users_data.json');
